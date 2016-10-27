@@ -1,0 +1,4 @@
+declared-services: 
+  node-red-cloudantNoSQLDB: 
+    label: cloudantNoSQLDB 
+    plan: Lite

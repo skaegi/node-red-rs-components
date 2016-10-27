@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('award-api',{
+        category: 'RS Components APIs',
+        color: '#a6bbcf',
+        defaults: {
+            apiKey: { value: ''},
+            nodeKey: { value: ''},
+            skuNumber: { value: ''}
+        },
+        inputs:3,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"rs-product-api";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="rs-product-api">
+    <div class="form-row">
+        <label for="node-input-api-key"><i class="icon-tag"></i> API Key</label>
+        <input type="text" id="node-input-api-key" placeholder="Insert your RS Components API Key">
+    </div>
+    <div class="form-row">
+        <label for="node-input-node-key"><i class="icon-tag"></i> Node Key</label>
+        <input type="text" id="node-input-node-key" placeholder="Insert your RS Components Node Key">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sku"><i class="icon-tag"></i> SKU number</label>
+        <input type="text" id="node-input-sku" placeholder="Insert the SKU number of the product">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="rs-product-api">
+    <p>An RS Components API node to lookup a Product from the RS Components Tactical APIs</p>
+</script>
