@@ -1,4 +1,4 @@
-declared-services: 
-  node-red-cloudantNoSQLDB: 
-    label: cloudantNoSQLDB 
-    plan: Lite
+declared-services:
+  nodeRedCloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    plan: Shared
