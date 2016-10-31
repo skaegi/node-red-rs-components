@@ -2,3 +2,7 @@ declared-services:
   nodeRedCloudantNoSQLDB:
     label: cloudantNoSQLDB
     plan: Lite
+
+applications:
+- name: node-red-rs-components
+  service: nodeRedCloudantNoSQLDB
