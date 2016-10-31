@@ -1,4 +1,4 @@
 declared-services:
   nodeRedCloudantNoSQLDB:
     label: cloudantNoSQLDB
-    plan: Lite
+    plan: Standard
